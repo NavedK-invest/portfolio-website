@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
             
             <div className={`z-10 transition-all duration-1000 ${isOnScreen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-poppins font-bold mb-4">
-                    John Doesss
+                    Naved Khan
                 </h1>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl text-[#FBBF24] font-semibold font-poppins mb-6">
                     Financial Analyst & Data Strategist
