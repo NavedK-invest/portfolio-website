@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
     const isOnScreen = useOnScreen(ref);
     
     return (
-        <section id="hero" ref={ref} className="min-h-screen -mx-[5rem] flex items-center justify-center text-center relative overflow-hidden">
+        <section id="hero" ref={ref} className="min-h-screen -mx-[2rem] lg:-mx-[5rem] flex items-center justify-center text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-[#0A192F]"></div>
             
             <div className={`z-10 transition-all duration-1000 ${isOnScreen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>

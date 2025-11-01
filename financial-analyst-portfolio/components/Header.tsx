@@ -31,7 +31,7 @@ const Header: React.FC = () => {
             <div className="container mx-auto px-6 md:px-12 lg:px-20">
                 <div className="flex justify-between items-center py-4">
                     <a href="#" onClick={(e) => handleNavClick(e, '#hero')} className="text-xl font-poppins font-bold text-[#FBBF24]">
-                        J. Doe
+                        N. Khan
                     </a>
                     <nav className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link, index) => (
