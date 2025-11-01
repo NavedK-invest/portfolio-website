@@ -8,27 +8,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
 import ScrollChart from './components/ScrollChart';
-
-const BackgroundParticles: React.FC = () => (
-    <div className="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none">
-        {Array.from({ length: 25 }).map((_, i) => (
-            <div
-                key={i}
-                className="particle"
-                style={{
-                    width: `${Math.random() * 8 + 2}px`,
-                    height: `${Math.random() * 8 + 2}px`,
-                    top: `${Math.random() * 100}%`,
-                    left: `${Math.random() * 100}%`,
-                    animationDelay: `${Math.random() * 10}s`,
-                    animationDuration: `${Math.random() * 20 + 15}s`,
-                    // background: `rgba(20, 184, 166, ${Math.random() * 0.25 + 0.1})`,
-                    background:'red'
-                }}
-            ></div>
-        ))}
-    </div>
-);
+import InteractiveBackground from './components/InteractiveBackground';
 
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
@@ -58,9 +38,8 @@ const App: React.FC = () => {
     }
 
     return (
-        <div className="text-[#E2E8F0] relative overflow-x-hidden">
-            <div className="main-background fixed inset-0 -z-20" />
-            <BackgroundParticles />
+        <div className="text-[#E2E8F0] relative overflow-x-hidden bg-transparent">
+            <InteractiveBackground />
             <ScrollChart />
             
             <div
